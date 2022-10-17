@@ -9,7 +9,7 @@
 6) Initialize: `git init`
 7) Add your username to the repo (note: global option allows it to be for all repos on your machine, leave that off for just this repo): `git config user.name Gabedinlos`
 8) Same for email: `git config user.email nunya@bidness.com`
-9) Add a remote origin for your repo that corresponds to step (2), note added .git to the end: `git remote add origin https://github.com/Gabedinlos/learningwilldelete.git`
+9) Add a remote origin for your repo that corresponds to step (2), note the added .git to the end: `git remote add origin https://github.com/Gabedinlos/learningwilldelete.git`
 10) Create a file in the repo: `echo "hello" > hello.txt`
 11) Check the status of the repo: `git status` (note it shows a file, hello.txt, in there not added to the repo)
 12) Add hello.txt to the repo: `git add hello.txt`

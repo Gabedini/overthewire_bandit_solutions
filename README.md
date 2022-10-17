@@ -7,3 +7,5 @@ Stuck? Either check the files in this repo or go [here](https://www.youtube.com/
 
 
 Note: going to save all solutions in markdown just because it's not a format I've used before and it would be nice to know since it's the default for GitHub readme files. (and it is just a plaintext option for the solutions that are going to be, well, plaintext)
+
+Check out the "Setting up your GitHub repo" first to get started!
