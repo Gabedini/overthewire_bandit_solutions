@@ -27,6 +27,6 @@
 24) But wait, we still have two branches and don't really need those, we can fix that by merging the two branches: git branch -m master main 
 25) Then pushing the update: git push -u origin main
 Basically, now it looks correct on GitHub and locally we're running on the main branch (git branch to check). We could delete that branch if we wanted to, but it doesn't hurt anything so we'll leave it for now.
-### *Basically half of those steps could have been avoided if we had simply cloned the repo into ~/Programs instead of inititalizing a repository and horsing around that way, but then we wouldn't have learned as much!
+### *Basically half of those steps could have been avoided if we had simply cloned the repo into ~/Programs instead of inititalizing a repository and horsing around that way, but then we wouldn't have learned as much!*
 
 For more info on Git, I suggest checking out [this](https://www.youtube.com/watch?v=DVRQoVRzMIY&t=1723s) video, but this should get us by for now.
