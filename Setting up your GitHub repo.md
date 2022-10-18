@@ -17,7 +17,7 @@
 14) Now we can commit the changes (with a message so it doesn't prompt and we remeber what changed): `git commit -m "first test"`
 15) Ok that worked, but oh no, it's not in the github repo! That's because we have only committed it locally, we need to push it to the repo for this to show up on GitHub.
 16) Push the repo: git push (it will propmt for your password): `git push https://github.com/Gabedinlos/learningwilldelete.git`
-17) Ope! We got an error. That's because it's not considered safe anymore to use username/password authentication. So we need to use a Personal Access Token to do it, see [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to generate a PAT and configure it's access (we need repo and that should be it).
+17) Ope! We got an error. That's because it's not considered safe anymore to use username/password authentication. So we need to use a Personal Access Token (I used classic vs fine grain) to do it, see [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to generate a PAT and configure it's access (we need repo and that should be it).
 18) Now you can use that in place of your password with the same command: `git push https://github.com/Gabedinlos/learningwilldelete.git`
 19) Great now it worked and things pushed! But wait, something looks off. So yeah, we screwed up, but I kept it in there because that's how you learn. Basically, we're operating on the master branch, but GitHub has a branch called 'main' - so we gotta fix that.
 20) We can run this to grab the stuff GitHub has that we don't: `git pull --allow-unrelated-histories https://github.com/Gabedinlos/learningwilldelete`
