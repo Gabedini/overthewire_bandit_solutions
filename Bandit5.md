@@ -4,7 +4,7 @@
     human-readable  
     1033 bytes in size 
     not executable  
-
+.
 
 username: bandit5
 password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
