@@ -1,19 +1,15 @@
-[Bandit3](https://overthewire.org/wargames/bandit/bandit3.html)
+[Bandit Level 2 → Level 3](https://overthewire.org/wargames/bandit/bandit3.html)
 
-> The password for the next level is stored in a hidden file in the inhere directory.  
+> The password for the next level is stored in a file called spaces in this filename located in the home directory.
 
-username: bandit3  
-password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG  
+username: bandit2  
+password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi  
 
 Solution below:  
 ———————————————————————————————————————  
-`ssh bandit3@bandit.labs.overthewire.org -p2220`  
-After getting logged in it looks like that 'inhere' was right in the home directory: `ls`  
-Hope in that bad boy: `cd inhere`  
-`ls` reveals a .hidden file, I wasn't sure if we could 'cat' that out directly, but `file .hidden` returned:  
-".hidden: ASCII text"  
-Which, the earlier '-' file returned that too when we checked the full filepath so we should be able to cat it  
-`cat .hidden` and that reveals the password  
-
-
+`ssh bandit2@bandit.labs.overthewire.org -p2220`  
+`ls` reveals the file mentioned  
+the idea is that `cat spaces in file name` won't work, we must either quote or delimit those spaces  
+If we type `cat s` and then hit 'tab' it will fill out the whole thing with `cat spaces\ in\ this\ filename` and we have the password  
+`cat "space in this filename"` will also work  
 `exit`  

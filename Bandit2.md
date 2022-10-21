@@ -1,15 +1,20 @@
-[Bandit2](https://overthewire.org/wargames/bandit/bandit2.html)
+[Bandit Level 1 → Level 2](https://overthewire.org/wargames/bandit/bandit2.html)
 
-> The password for the next level is stored in a file called spaces in this filename located in the home directory.
+> The password for the next level is stored in a file called - located in the home directory.
 
-username: bandit2  
-password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi  
+username: bandit1  
+password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL  
 
 Solution below:  
 ———————————————————————————————————————  
-`ssh bandit2@bandit.labs.overthewire.org -p2220`  
-`ls` reveals the file mentioned  
-the idea is that `cat spaces in file name` won't work, we must either quote or delimit those spaces  
-If we type `cat s` and then hit 'tab' it will fill out the whole thing with `cat spaces\ in\ this\ filename` and we have the password  
-`cat "space in this filename"` will also work  
+`ssh bandit1@bandit.labs.overthewire.org -p2220`  
+
+`ls` revels the mentioned file  
+so let's just try to cat out the contents of the file? `cat -` or `cat *` seem to do nothing...  
+What kind of file is that? I'm not sure, but `file -` also does not complete  
+`./-` doesn't work, so it's not an executable file   
+So it turns out - is standard input, so when we run that it's just waiting for us to give input, the same as if you ran `cat` with no file, that's while `file` also   doesn't work  
+But, this is actually a file, if we define the full path commands seem to work  
+So `file /home/bandit1/-` returns `./-: ASCII text./-: ASCII text`  
+So we can just cat it out using that (the fancier way would be to refer to our current directory with ./ instead of the full path): `cat ./-`  
 `exit`  
