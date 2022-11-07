@@ -18,3 +18,5 @@ But, this is actually a file, if we define the full path commands seem to work
 So `file /home/bandit1/-` returns `./-: ASCII text./-: ASCII text`  
 So we can just cat it out using that (the fancier way would be to refer to our current directory with ./ instead of the full path): `cat ./-`  
 `exit`  
+
+Also `cat < -` works

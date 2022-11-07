@@ -23,7 +23,7 @@ file: Cannot open `ile08' (No such file or directory)
 file: Cannot open `ile09' (No such file or directory)  
 
 The names aren't printing right - but oh wait, the file names start with "-" again, it seems like the shell is interpreting the '-f' as a command of some sort?  
-Not sure but it looks like the earlier level where if we call the full filepath it might work: file /home/bandit4/inhere/*  
+Not sure but it looks like the earlier level where if we call the full filepath it might work: `file /home/bandit4/inhere/*` (`file -- *` also works)  
 Which it does, we see that only "/home/bandit4/inhere/-file07: ASCII text" is the human readable and is the one we want:  
 `cat /home/bandit4/inhere/-file07` gives us the password.  
   
