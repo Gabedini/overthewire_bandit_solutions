@@ -12,5 +12,7 @@ Solution below:
 `ls` confirms it's in our home directory already, don't have to search for it  
 based on the clue for this level, I'm guessing millionth only occurs once, either the millionth character or line, classic spot to use grep and snag the whole line that's on  
 `cat data.txt | grep millionth` and wow there it be, we could clean that up some more but meh, it is already pretty clean  
+`grep "millionth" data.txt` also works
+
 
 `exit`  

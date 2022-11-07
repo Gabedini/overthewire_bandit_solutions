@@ -15,8 +15,8 @@ I see uniq is a binary according to the hints, `man uniq` the first flag for uni
 Well, I tried several variants of uniq with -u, -z, and -c and they all just printed the whole file it seems (well, I suppose probs 1 occurance of each password?)   
 
 I tried `sort data.txt` since that's another recommended binary, which does allow me to manually find the binary, it looks like all the other passwords occur 10 times🤔  
-Ooook, so if I do `sort` then pip to `uniq -c` it outputs proper counts, so then I should be able to grep for 1 and we'll be gucci  
+Ooook, so if I do `sort` then pipe to `uniq -c` it outputs proper counts, so then I should be able to grep for 1 and we'll be gucci  
 `sort data.txt | uniq -c | grep "1 "` - note a space is necessary, since the others occur 10 times, but we did get our password, so nice!  
-
+Korbyn's more clean solutions: `sort data.txt | uniq -u`
 
 `exit`  
