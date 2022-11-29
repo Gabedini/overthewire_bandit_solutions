@@ -23,8 +23,4 @@ Although that data5.bin just shows posix tar archive still, I can't cat it out, 
 There is our password
 
 
-
-
-
-
 `exit`  
