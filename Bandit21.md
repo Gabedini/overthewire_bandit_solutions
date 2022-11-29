@@ -19,9 +19,9 @@ So I think we need to set up a listening item and then try to connect to that, w
 `man nc` reveals that I think we can just do `nc -l 1234`  to listen and I suppose from another window run the suconnect?  
 Close - so what I did was run the netcat command above, then open a second ssh connection and ran `./suconnect 1234` which appeared to then be listening as well. I pasted in the password into this window, which didn't do anything, but when I pasted it in the terminal running the netcat command then it updated on the suconnect side and output the below:
 
-Read: VxCazJaVykI6W36BkBU0mJTCM8rR95XT
-Password matches, sending next password
+Read: VxCazJaVykI6W36BkBU0mJTCM8rR95XT  
+Password matches, sending next password  
 
-and on the netcat window it returned the password!
+and on the netcat window it returned the password!  
 
 `exit`  

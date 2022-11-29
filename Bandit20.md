@@ -10,8 +10,8 @@ Solution below:
 `ssh bandit19@bandit.labs.overthewire.org -p2220`  
 `man setuid` per hint  
 So that didn't really help, and running just `setuid` acts like nothing is installed.  
-Thinking that something is missing, I ran `ls -a` which showed a 'bandit20-do' file highlighted in red, so I think that is the setuid binary they're referring to, not as in a command line binary but a binary file? Not totally sure what they mean by that.  
-`file bandit20-do` returns some interesting info, so let's try `bandit20-do cat /etc/bandit_pass/bandit20` - that didn't work, it's trying to use that as a command. What about executable for that with some parameters?  
+Thinking that something is missing, I ran `ls -a` which showed a 'bandit20-do' file highlighted in red, so I think that is the setuid binary they're referring to, not as in a command line binary but a binary file. 
+`file bandit20-do` returns some interesting info, so let's try `bandit20-do cat /etc/bandit_pass/bandit20` - that didn't work, it's trying to use that as a command. What about executing that with some parameters?  
 `./bandit20-do cat /etc/bandit_pass/bandit20` and that gives a password so I guess that's what we were to do.  
 
 `exit`  
