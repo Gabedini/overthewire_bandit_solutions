@@ -45,7 +45,7 @@ Date:   Sat Dec 3 08:14:06 2022 +0000
 
     initial commit of README.md
 ```  
-So those different commits sound promising, perhaps the first one has the password unhidden? Or Maybet he second one? We can see by 'going back in time' but running `git checkout 6968b2ffdcc317a1aeb2ebfb54259f860a390354`  to see the first one. `ls` shows we still only have the README in there.  Catting it out shows that the password is there but hasn't been set yet.  
+So those different commits sound promising, perhaps the first one has the password unhidden? Or Maybet he second one? We can see by 'going back in time' by running `git checkout 6968b2ffdcc317a1aeb2ebfb54259f860a390354`  to see the first one. `ls` shows we still only have the README in there.  Catting it out shows that the password is there but hasn't been set yet.  
 `git checkout f08ee321c5f564b2da90789fac14b5ae2e55c56c` reveals the same, but when we cat out the readme, the password is there, and it's in plaintext!  
 
 

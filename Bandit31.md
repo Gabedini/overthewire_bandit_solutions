@@ -14,7 +14,7 @@ We need a directory to clone into, again, so `mkdir /tmp/gabedini8` and `cd /tmp
 This is the same as the last one too, with updated numbers: `git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo` 
 `ls` reveals the new repo, we need to cd with the full path again, `cd /tmp/gabedini8/repo`  
 Still have our README, however now it just gloats that it's 'just an empty file' let's see what else we can find  
-`ls -a` reveals some interesting stuff, including what appears to be a directory called .git (we need to call the full filepath to get in there still, `cd /tmp/gabedini8/repo/.git`, catting and CDing some stuff in here then and we see when we `cat packged-refs` the below:  
+`ls -a` reveals some interesting stuff, including what appears to be a directory called '.git' (we need to call the full filepath to get in there still, `cd /tmp/gabedini8/repo/.git`, catting and CDing some stuff in here then and we see when we `cat packged-refs` the below:  
 ```
 # pack-refs with: peeled fully-peeled sorted 
 0019ee8c6d6fd1dba2d73666b9e6339ad3314ddb refs/remotes/origin/master

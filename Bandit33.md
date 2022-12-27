@@ -13,6 +13,9 @@ Immediately my thought is maybe just caps lock would work, but that seems to yie
 It is actually converting everything to upper case, not needing upper case. So how do we make things lower case? Putting in quotes returns the same...  
 After a little searching around, it looks like there is more than one way to do this, but mostly we're looking for a very simple trick. I was thinking that we needed to trick it to output something to maybe stderr or something like that, but it seems like if we have it return $0, then we can run commands easily enouugh. Specifically, if we return that and then check which user we are `whoami`, it appears this shell is using bandit33, and we then have permission to simply `cat /etc/bandit_pass/bandit33` and we have the password.  
 
-So not very difficult, just need to try the proper trick.  
+So, not very difficult, just need to try the proper trick.  
 
 `exit`  
+
+This is the last level, I guess we're done. New challenges for the New Years!  
+#SDG  

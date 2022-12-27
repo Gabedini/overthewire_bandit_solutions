@@ -23,6 +23,6 @@ Details:
     Branch: master
 ```  
 Well, I guess let's make that file, `nano key.txt` then paste in that sentence. "ls" to make sure it saved right.  
-So, since we went over adding/pushing files in the setup for this series, we know roughly how this goes. `git branch` confirms we're on master - `git add *` (could specify by name but this is easier) to add the new file...except that gives an error, we need to add -f flag to that command, `git add -f * `. 'git status' shows the file added, we commit with `git commit -m "does this work?"` which seems to succeed. Now we just need to push it to the remote repo, which should be the same as our clone command but with push: `git push ssh://bandit31-git@localhost:2220/home/bandit31-git/repo`  and boom, there it outputs in the push confirmation our next password!  
+Since we went over adding/pushing files in the setup for this series, we know roughly how this goes. `git branch` confirms we're on master - `git add *` (could specify by name but this is easier) to add the new file...except that gives an error, we need to add -f flag to that command, `git add -f * `. 'git status' shows the file added, we commit with `git commit -m "does this work?"` which seems to succeed. Now we just need to push it to the remote repo, which should be the same as our clone command but with push: `git push ssh://bandit31-git@localhost:2220/home/bandit31-git/repo`  and boom, there it outputs in the push confirmation our next password!  
 
 `exit`  

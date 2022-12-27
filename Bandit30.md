@@ -22,6 +22,6 @@ Some notes for bandit30 of bandit.
 - username: bandit30
 - password: <no passwords in production!>
 ```  
-This makes me think that there might be a non-prod branch.. `git branch` shows what doesn't appear to be another option, just master... after a quick search there is a -a flag to `git branch -a` and that shows 4 different branches so I bet one of them has our password, based on the readme it would make sense for dev to have it. I We can know from the `git --help` command that there is a 'git diff' option, I think we can run this: `git diff  remotes/origin/HEAD remotes/origin/dev` and boom there is a password in our output.
+This makes me think that there might be a non-prod branch.. `git branch` shows what doesn't appear to be another option, just master... after a quick search there is a '-a' flag to `git branch -a` and that shows 4 different branches so I bet one of them has our password, based on the readme it would make sense for dev to have it. We can know from the `git --help` command that there is a 'git diff' option, I think we can run this: `git diff  remotes/origin/HEAD remotes/origin/dev` and boom there is a password in our output.
 
 `exit`  
