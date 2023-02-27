@@ -34,7 +34,7 @@ I think we need to read those in from a file, so what we'll do instead is make a
 
 for i in $(seq -f "%04g" 0 9999)
 do
-  echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i" >> passwords.txt
+  echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i" >> passwordsdontuse.txt
 done
 ```  
 `nc localhost 30002 <passwords.txt`  

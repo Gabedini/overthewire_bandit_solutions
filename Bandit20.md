@@ -15,3 +15,9 @@ Thinking that something is missing, I ran `ls -a` which showed a 'bandit20-do' f
 `./bandit20-do cat /etc/bandit_pass/bandit20` and that gives a password so I guess that's what we were to do.  
 
 `exit`  
+
+
+
+bandit19@bandit:~$ ./bandit20-do 
+Run a command as another user.
+  Example: ./bandit20-do id

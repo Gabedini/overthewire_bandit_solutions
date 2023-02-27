@@ -37,4 +37,6 @@ So per the hint above, it mentions running the script, which would make sense, s
 `./script.sh` which outputted /tmp/8ca319486bfbbc3663ea0fbe81326349 and `cat /tmp/8ca319486bfbbc3663ea0fbe81326349` gives us a password  
 
 
+
+note: could just cat it out after line 31 when it gives us the file name
 `exit`  

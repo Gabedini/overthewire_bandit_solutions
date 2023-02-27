@@ -11,7 +11,7 @@ Solution below:
 ———————————————————————————————————————  
 `ssh bandit29@bandit.labs.overthewire.org -p2220`  
 We need a directory to clone into, again, so `mkdir /tmp/gabedini7` and `cd /tmp/gabedini7`  
-This is the same as the last one too, with updated numbers: `git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo`  
+Clone our repo: `git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo`  
 `ls` reveals the new repo, we need to cd with the full path again, `cd /tmp/gabedini7/repo`  
 `ls` shows a README.md again,catting that out shows the following:
 ```# Bandit Notes
